@@ -7,21 +7,24 @@
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
+
     <header>
-        <h3>Pooja Bhandari</h3>
-        
+        <h3></h3>
     </header>
 
-        <div>
-            <h2>Hello, Glad to see you, I'm Pooja Bhandari.</h2>
-            <p></p>
-        </div>
-        <img src="pooja.jpg" alt="Pooja Bhandari">
-    </section>
+    <div class="hero">
+        <h2>Hello, Glad to see you, I'm Pooja Bhandari.</h2>
+        <img src="resized_image.jpeg" alt="Pooja Bhandari">
+    </div>
 
     <section>
         <h2>About Me</h2>
-        <p>I am a 21-year-old high school graduate, passionate about Computer Science. I aspire to pursue a degree in BSc (Hons) Computer Science at Biratnagar International College (Wolverhampton University). I have a strong interest in coding, technology, and designing.</p>
+        <p>
+            I am a 21-year-old IT enthusiast, passionate about Computer Science, Python, Web Development,
+            and Game Technologies. Alongside my studies, I also work as an Intern (Call Centre Representative –
+            Customer Service Representative) at Biratnagar International College, where I developed strong
+            communication, problem-solving, and client-handling skills.
+        </p>
     </section>
 
     <section>
@@ -29,7 +32,7 @@
         <table>
             <tr>
                 <th>Degree</th>
-                <th>Institution</th>
+                    <th>Institution</th>
                 <th>Board</th>
                 <th>Marks</th>
             </tr>
@@ -40,7 +43,7 @@
                 <td>A+</td>
             </tr>
             <tr>
-                <td>High School Diploma</td>
+                <td>High School</td>
                 <td>Arniko Secondary School</td>
                 <td>NEB</td>
                 <td>A</td>
@@ -54,40 +57,82 @@
         </table>
     </section>
 
-    <section>
-        <h2>Interests & Hobbies</h2>
-        <table>
-            <tr>
-                <th>Web Development</th>
-                <th>Game Technologies</th>
-                <th>Graphic Design</th>
-            </tr>
-            <tr>
-                <td>Building user-friendly websites and applications.</td>
-                <td>Designing aesthetically pleasing and functional game Technologies.</td>
-                <td>Creating visual designs for branding and marketing.</td>
-            </tr>
-        </table>
+    <!-- SKILLS SECTION -->
+    <section id="skills">
+        <h2>My Skills</h2>
+
+        <div class="skill">
+            <p>Python</p>
+            <div class="skill-bar"><span data-progress="70"></span></div>
+        </div>
+
+        <div class="skill">
+            <p>Web Development (HTML, CSS, JS)</p>
+            <div class="skill-bar"><span data-progress="75"></span></div>
+        </div>
+
+        <div class="skill">
+            <p>Game Technologies</p>
+            <div class="skill-bar"><span data-progress="80"></span></div>
+        </div>
     </section>
 
+    <!-- MEDIA SECTION -->
+    <section id="media">
+        <h2>Media & Canvas</h2>
+
+        <video width="300" controls>
+            <source src="Doremon-with-Friends-Full-Screen.mp4" type="video/mp4">
+        </video>
+
+        <audio controls>
+            <source src="doremon.mp3" type="audio/mpeg">
+        </audio>
+
+        <canvas id="myCanvas" width="300" height="150"></canvas>
+    </section>
+
+    <!-- IMAGE SLIDER -->
+    <section id="slider">
+        <h2>Image Slider</h2>
+
+        <div class="slider-container">
+            <img class="slide active" src="Nepal.jpg">
+            <img class="slide" src="Pashupatinath Temple.jpg">
+            <img class="slide" src="Pathivaramata.jpg">
+        </div>
+
+        <button id="prev">❮</button>
+        <button id="next">❯</button>
+    </section>
+
+    <!-- CONTACT FORM -->
     <section>
         <h2>Connect with Me</h2>
         <p>If you're interested in working with me, feel free to reach out!</p>
-        <form action="#" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name"><br><br>
-             
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email"><br><br>
+        
+        <form id="contactForm">
+            <label>Name:</label>
+            <input type="text" id="name">
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="2"></textarea>
+            <label>Email:</label>
+            <input type="email" id="email">
+
+            <label>Message:</label>
+            <textarea id="message" rows="2"></textarea>
+
             <button type="submit">Send</button>
         </form>
     </section>
 
-    <footer>&copy; 2024 Pooja Bhandari</footer>
-    <script src="portfolio.js"></script>
+    <!-- DARK MODE BUTTON -->
+    <button id="themeToggle">Toggle Theme</button>
 
+    <!-- BACK TO TOP -->
+    <button id="backToTop">↑</button>
+
+    <footer>&copy; 2025 Pooja Bhandari</footer>
+
+<script src="portfolio.js"></script>
 </body>
 </html>
