@@ -40,8 +40,8 @@ document.querySelectorAll(".project-card").forEach(card => {
 // ⭐ CANVAS DRAWING
 const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
-ctx.fillStyle = "lightblue";
-ctx.fillRect(20, 20, 150, 80);
+
+
 
 // ⭐ IMAGE SLIDER
 let index = 0;

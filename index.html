@@ -79,7 +79,7 @@
 
     <!-- MEDIA SECTION -->
     <section id="media">
-        <h2>Media & Canvas</h2>
+        <h2>Media</h2>
 
         <video width="300" controls>
             <source src="Doremon-with-Friends-Full-Screen.mp4" type="video/mp4">
@@ -88,9 +88,29 @@
         <audio controls>
             <source src="doremon.mp3" type="audio/mpeg">
         </audio>
+<section>
+    <canvas id="myCanvas" width="300" height="150"></canvas>
 
-        <canvas id="myCanvas" width="300" height="150"></canvas>
-    </section>
+    <script>
+        let c = document.getElementById("myCanvas"),
+            x = c.getContext("2d");
+
+        // Draw rectangle first
+        x.fillStyle = "lightblue";
+        x.fillRect(20, 20, 260, 110);
+
+        // Draw border
+        x.strokeRect(20, 20, 260, 110);
+
+        // Draw text on TOP
+        x.font = "20px Arial";
+        x.textAlign = "center";
+        x.textBaseline = "middle";
+        x.fillStyle = "black"; // IMPORTANT
+        x.fillText("hello pooja", 150, 75);
+    </script>
+</section>
+
 
     <!-- IMAGE SLIDER -->
     <section id="slider">

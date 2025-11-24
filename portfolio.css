@@ -90,15 +90,6 @@ section h2 {
     transition: width 2s;
 }
 
-/* PROJECT CARDS */
-.project-card {
-    background: #443834;
-    padding: 15px;
-    margin: 10px 0;
-    cursor: pointer;
-    color: white;
-    border-radius: 8px;
-}
 
 /* IMAGE SLIDER */
 .slider-container {
@@ -149,3 +140,4 @@ form input, form textarea {
     border: none;
     display: none;
 }
+
